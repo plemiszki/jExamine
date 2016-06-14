@@ -12,13 +12,13 @@ If passed a CSS selector, jExamine will return an array of all the HTML elements
 
 If passed an HTML element, jExamine will wrap that element in a jExamine object.
 ```javascript
-    var $newElement = $e("<ul/>")
+  var $newElement = $e("<ul/>")
   ```
 
   If passed a function, jExamine will invoke the function when the DOM has been loaded.
 ```javascript
- $e(function () { console.log("Hello World!") });
- ```
+  $e(function () { console.log("Hello World!") });
+  ```
 
 ## AJAX
 
