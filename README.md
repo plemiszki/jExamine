@@ -15,9 +15,91 @@ If passed an HTML element, jExamine will wrap that element in a jExamine object.
   var $newElement = $e("<ul/>")
   ```
 
-  If passed a function, jExamine will invoke the function when the DOM has been loaded.
+If passed a function, jExamine will invoke the function when the DOM has been loaded.
 ```javascript
   $e(function () { console.log("Hello World!") });
+  ```
+
+## jExamine Object Public API
+
+### addClass
+Add a class to DOM element(s).
+```javascript
+  $someElement.addClass(className)
+  ```
+
+### append
+Add child elements to DOM element(s).
+```javascript
+  $someElement.append(children)
+  ```
+
+### attr
+Get attribute of DOM element.
+```javascript
+  $someElement.attr(attrName)
+  ```
+Set attribute of DOM element(s).
+```javascript
+  $someElement.attr(attrName, value)
+  ```
+
+### children
+Get children of DOM element(s).
+```javascript
+  $someElement.children()
+  ```
+
+### empty
+Clear innerHTML of DOM element(s).
+```javascript
+  $someElement.empty()
+  ```
+
+### find
+Find DOM elements by selector.
+```javascript
+  $someElement.find(selector)
+  ```
+
+### html
+Get innerHTML of DOM element.
+```javascript
+  $someElement.html()
+  ```
+Set innerHTML of DOM element(s).
+```javascript
+  $someElement.html("Hello World!")
+  ```
+
+### off
+Remove event listener from DOM element(s).
+```javascript
+  $someElement.off(eventName, callback)
+  ```
+
+### on
+Add event listener to DOM element(s).
+```javascript
+  $someElement.on(eventName, callback)
+  ```
+
+### parent
+Get parent of DOM element.
+```javascript
+  $someElement.parent()
+  ```
+
+### remove
+Remove DOM element(s).
+```javascript
+  $someElement.remove()
+  ```
+
+### removeClass
+Remove class to DOM element(s).
+```javascript
+  $someElement.removeClass(className)
   ```
 
 ## AJAX
